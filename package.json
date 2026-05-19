@@ -1,0 +1,36 @@
+{
+  "name": "walletplug-pay-shopify",
+  "version": "1.0.0",
+  "description": "WalletPlug Pay — Shopify Payment Gateway Plugin",
+  "main": "backend/index.js",
+  "scripts": {
+    "start": "node backend/index.js",
+    "dev": "nodemon backend/index.js",
+    "build": "echo 'Build complete'",
+    "zip": "npm run build && cd .. && zip -r walletplug-pay-shopify-v1.0.0.zip walletplug-shopify/ -x '*/node_modules/*'"
+  },
+  "dependencies": {
+    "@shopify/shopify-api": "^9.0.0",
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "crypto": "^1.0.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "shopify",
+    "payment",
+    "walletplug",
+    "gateway",
+    "ecommerce"
+  ],
+  "author": "WalletPlug",
+  "license": "MIT"
+}
