@@ -2,9 +2,9 @@
   "name": "walletplug-pay-shopify",
   "version": "1.0.0",
   "description": "WalletPlug Pay — Shopify Payment Gateway Plugin",
-  "main": "backend/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node backend/index.js",
+    "start": "node index.js",
     "dev": "nodemon backend/index.js",
     "build": "echo 'Build complete'",
     "zip": "npm run build && cd .. && zip -r walletplug-pay-shopify-v1.0.0.zip walletplug-shopify/ -x '*/node_modules/*'"
